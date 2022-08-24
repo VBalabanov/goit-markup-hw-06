@@ -838,6 +838,15 @@ margin-left: 10px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
+    fill: #000;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+    cursor: pointer;
 }
 
 .close-icon {
@@ -871,10 +880,10 @@ margin-left: 10px;
 }
 
 .input-title {
-    color: #212121;
-    margin-bottom: 4px;
+    color: #757575;
     font-size: 12px;
     line-height: 14px;
+    letter-spacing: 0.01em;
 }
 
 .form-comment {
@@ -890,6 +899,7 @@ margin-left: 10px;
     padding-bottom: 12px;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 4px;
     margin-bottom: 10px;
 }
 
@@ -903,6 +913,7 @@ margin-left: 10px;
 
 .input-wrap {
     position: relative;
+    margin-top: 4px;
 }
 
 .input-icon {
@@ -920,8 +931,8 @@ margin-left: 10px;
 .check-text {
     font-size: 14px;
     color: #757575;
+    letter-spacing: 0.03em;
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -981,7 +992,7 @@ margin-left: 10px;
     color: #fff;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .form-button:hover,
