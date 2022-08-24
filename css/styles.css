@@ -891,7 +891,6 @@ margin-left: 10px;
     height: 120px;
     font-size: 12px;
     line-height: 14px;
-    letter-spacing: 0.01em;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
@@ -905,6 +904,11 @@ margin-left: 10px;
 
 .form-comment:focus {
     outline-color: var(--accent-color);
+}
+
+.form-comment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    letter-spacing: 0.01em;
 }
 
 .input-field {
